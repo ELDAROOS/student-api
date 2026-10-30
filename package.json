@@ -1,0 +1,26 @@
+{
+  "name": "student-api",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Практическая работа: REST API студентов на Express, PostgreSQL и MongoDB",
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "start": "node app.js",
+    "dev": "node --watch app.js",
+    "db:init": "node scripts/init-db.js",
+    "db:seed": "node scripts/seed.js",
+    "verify:postgres": "node scripts/verify-postgres.js",
+    "verify:mongodb": "node scripts/verify-mongodb.js",
+    "setup:mongodb": "node scripts/setup-mongodb.js",
+    "test": "node --test test/*.test.js"
+  },
+  "dependencies": {
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "mongodb": "^7.0.0",
+    "pg": "^8.20.0"
+  }
+}

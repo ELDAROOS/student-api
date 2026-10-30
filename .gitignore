@@ -1,0 +1,10 @@
+node_modules/
+.env*
+!.env.example
+.DS_Store
+~$*
+coverage/
+*.log
+verification-postgres.json
+verification-mongodb.json
+setup-mongodb.json
